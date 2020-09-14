@@ -25,6 +25,7 @@ export class CoursesListComponent implements OnInit {
 
   ngOnInit() {
     this.courses$ = this.store.select(getAllCourses);
+    console.log(this.courses$)
   }
 
   deleteCourse(courseId: string) {

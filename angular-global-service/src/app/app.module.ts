@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './navbar/navbar.component';
 import { reducers, metaReducers } from './store/reducers';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
@@ -28,6 +29,7 @@ const routes = [
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,13 @@
+<div>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="courses" routerLinkActive="active">List Courses</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="create-course" routerLinkActive="active">Create Course</a>
+    </li>
+    <li *ngIf="courses$ | async as courses">
+      <td>{{ courses.length }} Courses</td>
+    </li>
+  </ul>
+</div>

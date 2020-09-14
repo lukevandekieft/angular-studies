@@ -1,10 +1,13 @@
-# AngularNgrxExample
+# Angular NgRx PoC
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+Based on example repo below:
+https://github.com/sarindufit/angular-ngrx-example/tree/master/angular-ngrx-example
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `course-1.0.0-SNAPSHOT.jar` for a dev backend server.
+
+Run `ng serve` for a dev frontend. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
