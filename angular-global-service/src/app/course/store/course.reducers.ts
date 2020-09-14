@@ -32,6 +32,7 @@ export const courseReducer = createReducer(
   }),
 
   on(courseActionTypes.updateCourse, (state, action) => {
+    console.log(action)
     return adapter.updateOne(action.update, state);
   })
 );
