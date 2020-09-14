@@ -5,13 +5,15 @@ https://github.com/sarindufit/angular-ngrx-example/tree/master/angular-ngrx-exam
 
 ## Development server
 
-1. Run `course-1.0.0-SNAPSHOT.jar` by clicking on it. Allow Java to use resources if asked. This will provision a dev backend server.
+1. Change directories to run the desired frontend demo, `$ cd angular-global-service` or `$ cd angular-ngrx`.
 
-2. Change directories to run the desired frontend demo, `$ cd angular-global-service` or `$ cd angular-ngrx`.
+2. Install files with `$ npm install`.
 
-3. Install files with `$ npm install`.
+3. Start frontend with `$ npm run start`.
 
-Navigate to `http://localhost:4200/` in your browser. The app will automatically reload if you change any of the source files.
+4. Navigate to `http://localhost:4200/` in your browser. The app will automatically reload if you change any of the source files.
+
+5. If in NgRx demo: click on `course-1.0.0-SNAPSHOT.jar` to provision a backend service with NgRx. Allow Java to use resources if asked.
 
 ## Documentation
 
