@@ -21,23 +21,24 @@ export class CoursesListComponent {
   //   this.store.dispatch(courseActionTypes.deleteCourse({courseId}));
   // }
 
-  // showUpdateForm(course: Course) {
-  //   this.courseToBeUpdated = {...course};
-  //   this.isUpdateActivated = true;
-  // }
+  showUpdateForm(course: Course) {
+    this.courseToBeUpdated = {...course};
+    this.isUpdateActivated = true;
+  }
 
-  // updateCourse(updateForm) {
-  //   const update: Update<Course> = {
-  //     id: this.courseToBeUpdated.id,
-  //     changes: {
-  //       ...this.courseToBeUpdated,
-  //       ...updateForm.value
-  //     }
-  //   };
+  updateCourse(updateForm) {
+    // const update: Course = {
+    //   id: this.courseToBeUpdated.id,
+    //   changes: {
+    //     ...this.courseToBeUpdated,
+    //     ...updateForm.value
+    //   }
+    // };
+    //     const course: Course = {id: uuid.v4(), name: submittedForm.value.name, description: submittedForm.value.description};
 
-  //   this.store.dispatch(courseActionTypes.updateCourse({update}));
+    // this.store.dispatch(courseActionTypes.updateCourse({update}));
 
-  //   this.isUpdateActivated = false;
-  //   this.courseToBeUpdated = null;
-  // }
+    this.isUpdateActivated = false;
+    this.courseToBeUpdated = null;
+  }
 }
