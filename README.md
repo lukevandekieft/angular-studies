@@ -14,6 +14,7 @@
 
 ## Documentation
 
+A discussion of pros on cons on using NgRx vs. a global service can be found [here](./ngrx_or_global.md).
 
 ## Code scaffolding
 
