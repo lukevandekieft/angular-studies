@@ -14,9 +14,6 @@
 
 </br>
 
----
-</br>
-
 ## Basic Comparisons
 
 |        | **Global Service** | **Redux** |
@@ -30,9 +27,6 @@
 
 </br>
 
----
-</br>
-
 ## “Don’t Use Redux Unless You Need it!” When is That?
 
 ### Use When:
@@ -42,8 +36,6 @@
 -	State is long-lived and needs to be maintained for long user sessions
 -	It’s important to know when state slices change and where they come from
 -	Components concurrently show different views based on the same data (think Facebook’s message list, count, and notifications all in different sections)
-
-</br>
 
 ### The Tradeoff
 You get:
@@ -63,20 +55,14 @@ In exchange you must:
 
 </br>
 
----
-</br>
-
 ## Dismissed Global State Options
 
-### **GraphQL** 
-This works great as a pseudo-store but requires a massive overhaul of data management, query practices, and even basic structural components. If we aren’t picking GraphQL for its other values then it’s inadvisable to use just for state.
+### **Apollo GraphQL** 
+This works great as a pseudo-store but requires a massive overhaul of data management, query practices, and even basic structural components. If we aren’t picking GraphQL for its other values then it’s inadvisable to use Apollo just for state.
 
 ### **Promises/Mutable Variables** 
 Not a realistic option for anything other than the simplest apps. There are plenty of reasons why, but notable examples include its inability to accurately scale across multiple components, the likelihood of mutations getting lost, and the rigid/dated paradigm under which Promises operate.
 
-</br>
-
----
 </br>
 
 ## Questions to Ask When Deciding
@@ -87,9 +73,6 @@ Not a realistic option for anything other than the simplest apps. There are plen
 -	Would implementing our own global service simplify state and cut back on boilerplate, or would it create extra work wherein we need to reinvent the wheel?
 -	If we decide on a global service then do we use Akita? (Would be a shorter spike)
 
-</br>
-
----
 </br>
 
 ## More Pros and Cons for NgRx
@@ -107,9 +90,6 @@ Not a realistic option for anything other than the simplest apps. There are plen
 -	It’s unlikely that more than one source would mutate our draft data at a time (e.g. a server)
 -	How is store cleaned up?
 
-</br>
-
----
 </br> 
 
 ## Reading and References:
