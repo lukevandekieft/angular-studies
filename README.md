@@ -1,8 +1,5 @@
 # Angular NgRx PoC
 
-Based on example repo below:
-https://github.com/sarindufit/angular-ngrx-example/tree/master/angular-ngrx-example
-
 ## Development server
 
 1. Change directories to run the desired frontend demo, `$ cd angular-global-service` or `$ cd angular-ngrx`.
