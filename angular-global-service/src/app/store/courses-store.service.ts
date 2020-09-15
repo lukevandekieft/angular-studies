@@ -21,17 +21,17 @@ export class CoursesStoreService {
     return this._coursesSource.getValue();
   }
 
-  private _setPuppies(courses: Course[]): void {
+  private _setCourses(courses: Course[]): void {
     this._coursesSource.next(courses);
   }
 
   addCourse(course: Course): void {
     const courses = [...this.getCourses(), course];
-    this._setPuppies(courses);
+    this._setCourses(courses);
   }
 
   removeCourse(course: Course): void {
     const courses = this.getCourses().filter(p => p.id !== course.id);
-    this._setPuppies(courses);
+    this._setCourses(courses);
   }
 }

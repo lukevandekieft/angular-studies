@@ -1,5 +1,4 @@
 import { AppState } from '../store/reducers/index';
-import { getAllCourses } from '../course/store/course.selectors';
 import { Observable } from 'rxjs';
 import { Course } from '../course/model/course.model';
 import { Store } from '@ngrx/store';
