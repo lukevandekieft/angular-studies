@@ -9,7 +9,11 @@ export class CoursesStoreService {
   // Make _coursesSource private so it's not accessible from the outside, 
   // expose it as courses$ observable (read-only) instead.
   // Write to _coursesSource only through specified store methods below.
-  private readonly _coursesSource = new BehaviorSubject<Course[]>([]);
+  private readonly _coursesSource = new BehaviorSubject<Course[]>([
+    {'id': '120ef3', 'name': 'Calculus 203', 'description': 'The Limit Does not Exist!'},
+    {'id': '120ef332ofewf', 'name': 'Organic Chemistry 301', 'description': 'So You Want to Be a Doctor?'},
+    {'id': '120efewf', 'name': 'Constitutional Law 402', 'description': "I Don't Need Back-ups, I'm Going to Harvard"}
+  ]);
 
   // Exposed observable (read-only).
   readonly courses$ = this._coursesSource.asObservable();

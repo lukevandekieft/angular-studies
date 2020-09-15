@@ -13,10 +13,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 const routes = [
   {
     path: 'courses',
-    component: CoursesListComponent,
-    // resolve: {
-    //   courses: CourseResolver
-    // }
+    component: CoursesListComponent
   },
   {path: 'create-course', component: CreateCourseComponent},
   {path: '**', redirectTo: 'courses'}
