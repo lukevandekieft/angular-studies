@@ -1,24 +1,21 @@
 import { Observable } from 'rxjs';
 import { Course } from './../../model/course.model';
-import { Component, OnInit } from '@angular/core';
+import { CoursesStoreService } from '../../../store/courses-store.service';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-courses-list',
-  templateUrl: './courses-list.component.html'
+  templateUrl: './courses-list.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class CoursesListComponent implements OnInit {
-
-  courses$: Observable<Course[]>;
+export class CoursesListComponent {
 
   courseToBeUpdated: Course;
 
   isUpdateActivated = false;
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  constructor(public coursesStore: CoursesStoreService) { }
 
   // deleteCourse(courseId: string) {
   //   this.store.dispatch(courseActionTypes.deleteCourse({courseId}));

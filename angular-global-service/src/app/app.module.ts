@@ -1,6 +1,7 @@
 import { CreateCourseComponent } from './course/component/create-course/create-course.component';
 import { CoursesListComponent } from './course/component/courses-list/courses-list.component';
 import { CourseModule } from './course/course.module';
+import { CoursesStoreService } from './store/courses-store.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -32,7 +33,7 @@ const routes = [
     HttpClientModule,
     RouterModule.forRoot(routes)
   ],
-  // providers: [CourseResolver],
+  providers: [CoursesStoreService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

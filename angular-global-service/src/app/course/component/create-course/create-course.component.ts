@@ -9,9 +9,7 @@ import * as uuid from 'uuid';
 })
 export class CreateCourseComponent implements OnInit {
 
-  CoursesService : CoursesStoreService = new CoursesStoreService();
-
-  constructor() { }
+  constructor(public coursesStore: CoursesStoreService) { }
 
   ngOnInit() { }
 
@@ -23,6 +21,6 @@ export class CreateCourseComponent implements OnInit {
     }
 
     const course: Course = {id: uuid.v4(), name: submittedForm.value.name, description: submittedForm.value.description};
-    this.CoursesService.addCourse(course);
+    this.coursesStore.addCourse(course);
   }
 }

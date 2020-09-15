@@ -28,6 +28,7 @@ export class CoursesStoreService {
   addCourse(course: Course): void {
     const courses = [...this.getCourses(), course];
     this._setCourses(courses);
+    console.log(courses)
   }
 
   removeCourse(course: Course): void {
