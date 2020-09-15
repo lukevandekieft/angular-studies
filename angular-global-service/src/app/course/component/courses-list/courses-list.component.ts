@@ -17,9 +17,9 @@ export class CoursesListComponent {
 
   constructor(public coursesStore: CoursesStoreService) { }
 
-  // deleteCourse(courseId: string) {
-  //   this.store.dispatch(courseActionTypes.deleteCourse({courseId}));
-  // }
+  deleteCourse(course: Course) {
+    this.coursesStore.removeCourse(course);
+  }
 
   showUpdateForm(course: Course) {
     this.courseToBeUpdated = {...course};
