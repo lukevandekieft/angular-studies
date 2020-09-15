@@ -2,6 +2,7 @@ import { Course } from './../../model/course.model';
 import { CoursesStoreService } from '../../../store/courses-store.service';
 import { Component, OnInit, Input, Output, EventEmitter, ChangeDetectionStrategy} from '@angular/core';
 import * as uuid from 'uuid';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-create-course',
@@ -9,7 +10,7 @@ import * as uuid from 'uuid';
 })
 export class CreateCourseComponent implements OnInit {
 
-  constructor(public coursesStore: CoursesStoreService) { }
+  constructor(public coursesStore: CoursesStoreService, private router: Router) { }
 
   ngOnInit() { }
 
@@ -22,5 +23,6 @@ export class CreateCourseComponent implements OnInit {
 
     const course: Course = {id: uuid.v4(), name: submittedForm.value.name, description: submittedForm.value.description};
     this.coursesStore.addCourse(course);
+    this.router.navigate(['/courses'])
   }
 }
