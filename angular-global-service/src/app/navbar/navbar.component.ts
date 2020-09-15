@@ -1,16 +1,12 @@
-import { Observable } from 'rxjs';
-import { Course } from '../course/model/course.model';
 import { Component, OnInit } from '@angular/core';
+import { CoursesStoreService } from '../store/courses-store.service';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html'
 })
 export class NavbarComponent implements OnInit {
-
-  courses$: Observable<Course[]>;
-
-  constructor() { }
+  constructor(public coursesStore: CoursesStoreService) { }
 
   ngOnInit() {
   }
