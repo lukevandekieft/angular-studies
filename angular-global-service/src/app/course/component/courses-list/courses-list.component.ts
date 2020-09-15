@@ -26,19 +26,11 @@ export class CoursesListComponent {
     this.isUpdateActivated = true;
   }
 
-  updateCourse(updateForm) {
-    // const update: Course = {
-    //   id: this.courseToBeUpdated.id,
-    //   changes: {
-    //     ...this.courseToBeUpdated,
-    //     ...updateForm.value
-    //   }
-    // };
-    //     const course: Course = {id: uuid.v4(), name: submittedForm.value.name, description: submittedForm.value.description};
-
-    // this.store.dispatch(courseActionTypes.updateCourse({update}));
+  updateCourse(updateForm, id) {
+    const updatedCourse: Course = {id: id, name: updateForm.value.name, description: updateForm.value.description};
+    this.coursesStore.updateCourse(updatedCourse);
 
     this.isUpdateActivated = false;
     this.courseToBeUpdated = null;
-  }
+  }s  
 }

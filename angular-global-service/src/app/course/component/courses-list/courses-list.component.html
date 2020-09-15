@@ -21,7 +21,7 @@
 
   <div *ngIf="isUpdateActivated" style="margin-top: 50px; margin-left: 50px;">
     <h4>Update Course</h4>
-    <form (ngSubmit)="updateCourse(updateForm)" #updateForm="ngForm">
+    <form (ngSubmit)="updateCourse(updateForm, courseToBeUpdated.id)" #updateForm="ngForm">
       <div class="form-group">
         <label for="name">Course Name</label>
         <input

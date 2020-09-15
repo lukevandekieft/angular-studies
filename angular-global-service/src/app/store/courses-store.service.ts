@@ -39,4 +39,11 @@ export class CoursesStoreService {
     const courses = this.getCourses().filter(p => p.id !== course.id);
     this._setCourses(courses);
   }
+
+  updateCourse(course: Course): void {
+    const courses = this.getCourses().map(c =>
+      c.id === course.id ? course : c
+    );
+    this._setCourses(courses);
+  }
 }
