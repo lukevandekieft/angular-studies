@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 
-@Component({
+@Component({ // decorators tell Angular what this actually is
   selector: 'pm-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  title = 'Angular: Getting Started';
+  pageTitle: string = 'Acme Product Management';
 }
