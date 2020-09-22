@@ -48,7 +48,7 @@
           <td> {{product.releaseDate}} </td>
           <td> {{product.price | currency:'USD':'symbol':'1.2-2'}} </td>
           <!-- symbol == use $ instead of USC, 1.2-2 means 1 digit to the left of decimal and between 2-2 digits to right -->
-          <td> {{product.starRating}} </td>
+          <td><pm-star [rating]='product.starRating'></pm-star></td>
         </tr>
       </tbody>
     </table>
