@@ -9,6 +9,7 @@ import { ProductListComponent } from './products/product-list/product-list.compo
 import { ConvertToSpacesPipe } from './shared/convert-to-spaces.pipe';
 import { StarComponent } from './shared/star/star.component';
 import { ProductDetailComponent } from './products/product-detail/product-detail.component';
+import { ProductDetailGuard } from './products/product-detail/product-detail.guard';
 import { WelcomeComponent } from './home/welcome.component';
 
 @NgModule({ // @NgModule decorator is what tells Angular to interpret this class as a module
@@ -26,7 +27,7 @@ import { WelcomeComponent } from './home/welcome.component';
     HttpClientModule,
     RouterModule.forRoot([
       { path: 'products', component: ProductListComponent },
-      { path: 'products/:productId', component: ProductDetailComponent },
+      { path: 'products/:productId', canActivate: [ProductDetailGuard], component: ProductDetailComponent },
       { path: 'welcome', component: WelcomeComponent },
       { path: '', redirectTo: 'welcome', pathMatch: 'full' },
       { path: '**', redirectTo: 'welcome', pathMatch: 'full' } // typically a 404 page
