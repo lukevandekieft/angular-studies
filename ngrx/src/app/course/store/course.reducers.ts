@@ -1,4 +1,4 @@
-import { Course } from './../model/course.model';
+import { Course } from '../model/course.model';
 import { EntityState, EntityAdapter, createEntityAdapter } from '@ngrx/entity';
 import { createReducer, on } from '@ngrx/store';
 import { courseActionTypes, coursesLoaded } from './course.actions';

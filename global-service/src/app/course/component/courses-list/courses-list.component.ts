@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs';
-import { Course } from './../../model/course.model';
+import { Course } from '../../model/course.model';
 import { CoursesStoreService } from '../../../store/courses-store.service';
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, NgForm } from '@angular/forms';

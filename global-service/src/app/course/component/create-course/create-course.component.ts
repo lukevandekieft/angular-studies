@@ -1,4 +1,4 @@
-import { Course } from './../../model/course.model';
+import { Course } from '../../model/course.model';
 import { CoursesStoreService } from '../../../store/courses-store.service';
 import { Component, OnInit, Input, Output, EventEmitter, ChangeDetectionStrategy} from '@angular/core';
 import * as uuid from 'uuid';

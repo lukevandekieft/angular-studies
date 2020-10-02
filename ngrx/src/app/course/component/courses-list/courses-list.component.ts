@@ -1,10 +1,10 @@
-import { getAllCourses } from './../../store/course.selectors';
-import { courseActionTypes } from './../../store/course.actions';
-import { AppState } from './../../../store/reducers/index';
+import { getAllCourses } from '../../store/course.selectors';
+import { courseActionTypes } from '../../store/course.actions';
+import { AppState } from '../../../store/reducers/index';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { Course } from './../../model/course.model';
-import { CourseService } from './../../services/course.service';
+import { Course } from '../../model/course.model';
+import { CourseService } from '../../services/course.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, NgForm } from '@angular/forms';
 import { Update } from '@ngrx/entity';

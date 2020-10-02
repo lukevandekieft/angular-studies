@@ -1,6 +1,6 @@
 import { areCoursesLoaded } from './store/course.selectors';
 import { loadCourses, coursesLoaded } from './store/course.actions';
-import { AppState } from './../store/reducers/index';
+import { AppState } from '../store/reducers/index';
 import { Course } from './model/course.model';
 import { Injectable } from '@angular/core';
 import {ActivatedRouteSnapshot, Resolve, RouterStateSnapshot} from '@angular/router';

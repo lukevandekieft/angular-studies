@@ -1,5 +1,5 @@
 import { CourseState } from './course.reducers';
-import { Course } from './../model/course.model';
+import { Course } from '../model/course.model';
 import { createSelector, createFeatureSelector } from '@ngrx/store';
 import { selectAll, selectIds } from './course.reducers';
 

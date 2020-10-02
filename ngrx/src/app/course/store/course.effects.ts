@@ -1,5 +1,5 @@
 import { courseActionTypes, coursesLoaded, updateCourse } from './course.actions';
-import { CourseService } from './../services/course.service';
+import { CourseService } from '../services/course.service';
 import { createEffect, Actions, ofType } from '@ngrx/effects';
 import { concatMap, map, tap } from 'rxjs/operators';
 import { Injectable } from '@angular/core';

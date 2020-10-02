@@ -1,4 +1,4 @@
-import { Course } from './../model/course.model';
+import { Course } from '../model/course.model';
 import { createAction, props } from '@ngrx/store';
 import {Update} from '@ngrx/entity';
 
